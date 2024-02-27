@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Thi Trắc Nghiệm</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Ảnh bên trải -->
+    <img src="./img/bg_left.png" alt="Left Image" class="left-image">
+
+    <!-- Ảnh bên phải -->
+    <img src="./img/bg_right.png" alt="Right Image" class="right-image">
+
+    <form onsubmit="return validateLogin()">
+        <div id="info-section">
+            <h2>Đăng nhập</h2>
+            <label for="name">Tên Đăng nhập</label>
+            <input type="text"  id="name">
+            <label for="password">Mật khẩu</label>
+            <div class="input-group">
+                <input type="password" id="password" class="form-control form-control-lg" />
+                <div class="input-group-append">                                                 
+                    <span class="eye-icon" onclick="togglePassword()">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
+                
+            </div>
+            <button onclick="startQuiz()">Đăng nhập</button>
+    
+        <script src="./js/login.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <p class="register-link">Chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+
+        </div>
+    </form>
+</body>
+</html>

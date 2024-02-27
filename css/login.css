@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Màu nền của trang */
+}
+
+.left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: -1; /* Đặt ảnh bên trái ở phía sau */
+}
+
+.right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: -1; /* Đặt ảnh bên phải ở phía sau */
+}
+
+form {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff; /* Màu nền của phần đăng nhập */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+#info-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Màu chữ */
+}
+
+#info-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Màu chữ */
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Loại bỏ đường viền khi focus */
+    transition: border-color 0.3s ease; /* Hiệu ứng khi focus */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff; /* Màu đường viền khi focus */
+}
+
+.input-group-append {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 35%; /* Căn chỉnh nút con mắt vào giữa theo chiều dọc */
+    right: 0px;
+    transform: translateY(-50%);
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+
+.eye-icon:hover {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+#info-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff1100; /* Màu nền của nút Đăng nhập */
+    color: #fff; /* Màu chữ */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+#info-section button:hover {
+    background-color: #e67011; /* Màu nền khi hover */
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #007bff; /* Màu chữ của liên kết */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}

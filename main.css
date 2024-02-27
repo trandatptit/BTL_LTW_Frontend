@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Sử dụng inline-block thay vì inline để có thể sử dụng margin */
+    margin-left: 20px; /* Khoảng cách từng ô với nhau */
+    border: 1px solid #ccc; /* Kẻ ô cho mỗi li */
+    border-radius: 5px; /* Bo tròn các góc của ô */
+    margin-right: 5px; /* Khoảng cách giữa các ô */
+    padding: 10px; /* Khoảng cách lề bên trong của ô */
+    background-color: #f60a0a; /* Màu nền của ô */
+    color: #eae6e6; /* Màu chữ của ô */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+}
+
+nav ul li:hover {
+    background-color: #ce6161; /* Màu nền khi di chuột vào */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); /* Hiển thị viền xung quanh khi di chuột vào */
+}
+
+nav ul li a {
+    color: inherit; /* Sử dụng màu chữ được đặt cho li */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+}
+
+main {
+    padding: 20px;
+}
+
+.quiz-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-categories ul li a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: red;
+    transition: text-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động cho text-shadow */
+}
+.quiz-categories ul li a:hover {
+    text-shadow: 2px 2px 5px rgba(102, 8, 8, 0.5); /* Chữ nổi khi di chuột vào */
+}
+
+.featured-quiz .quiz {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.start-quiz-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+.tieu-de{
+    color: black;
+}
+
+footer{
+    background-color: red;
+    color: #fff; /* Đổi màu chữ thành trắng */
+    padding: 20px;
+    text-align: center;
+}
+
+/* dang ki */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Màu nền của trang */
+}
+
+#register-form {
+    width: 300px;
+    margin: 100px auto; /* Canh giữa trang */
+    padding: 20px;
+    background-color: #fff; /* Màu nền của form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form label {
+    margin-bottom: 10px;
+}
+
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#register-form button {
+    padding: 10px;
+    background-color: #ff0000; /* Màu nền của nút Đăng ký */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #0056b3; /* Màu nền khi rê chuột vào nút Đăng ký */
+}
+
+/* // */
