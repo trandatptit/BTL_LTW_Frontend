@@ -1,12 +1,12 @@
 // kiem tra dang nhap
-function validateLogin() {
+function validateLogin_Admin() {
     var username = document.getElementById('name').value;
     var password = document.getElementById('password').value;
 
     // Kiểm tra mật khẩu
-    if (username === 'dat' && password === '123') {
+    if (username === 'admin' && password === '123') {
         alert('Đăng nhập thành công!');
-        window.location.href = 'trang_chinh.html';
+        window.location.href = 'TrangDashBoard.html';
         return false;
     } else {
         alert('Tên đăng nhập hoặc mật khẩu không đúng!');
